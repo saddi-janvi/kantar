@@ -2,7 +2,7 @@ import Image from "next/image";
 import disneyLogo from "/public/disney.png";
 import img1 from "/public/img1.jpg";
 import img2 from "/public/img2.jpeg";
-import img3 from "/public/img3.webp";
+import img3 from "/public/img3.jpg";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
 
@@ -20,7 +20,7 @@ const sections = [
     id: "company-culture",
     title: "What is Disney?",
     content:
-      "Disney is more than just an entertainment company—it's a vast universe where magic is real and dreams come true. At its heart, Disney is about storytelling, creating a tapestry of tales that span from enchanting animated features and breathtaking theme parks to cutting-edge television networks and pioneering streaming services like Disney+. Whether it's the classic allure of Mickey Mouse and Cinderella or the action-packed adventures of Marvel superheroes and Star Wars, Disney has something to captivate everyone. Disney’s impact goes beyond the screen, influencing generations and crafting some of the most cherished memories of childhood and beyond. It’s a place where creativity and innovation blend seamlessly, pushing the boundaries of what entertainment can be. Visiting a Disney park, one can't help but feel the joy and excitement in the air, the meticulous attention to detail, and the overarching sense of wonder. For many, Disney is a part of who they are—shaping values through narratives of heroism, friendship, and perseverance. It's a beacon of joy and a repository of our collective childhoods. In essence, Disney isn't just a company; it's a cultural phenomenon that continues to enchant and inspire the world with each magical story it tells.",
+      "To me, Disney represents a boundless landscape of imagination and innovation where storytelling transcends the screen and becomes part of the very fabric of our lives. It's a realm where stories aren't just told—they are experienced. Disney weaves magic into the mundane, transforming everyday moments into adventures that thrill the spirit and challenge the mind. From the nostalgic chords of a classic Disney tune to the thrilling visuals of a Marvel superhero saga, Disney has mastered the art of creating universes that appeal to the child in all of us. Its magic lies not just in its ability to entertain, but in its power to inspire and educate through diverse narratives that speak to a global audience, fostering a connection that bridges continents and cultures. As a professional deeply entrenched in the world of data and technology, I see Disney not only as an entertainment titan but as a pioneer in leveraging cutting-edge technology to enhance storytelling. Whether it's through AI-driven personalization in Disney+ or the integration of virtual reality in theme parks, Disney is at the forefront of technological innovation, using it to make its magical experiences even more immersive and accessible. For someone like me, who believes in the power of data to enhance narratives and drive decisions, Disney's approach to storytelling through technology offers a compelling canvas. It's a place where my analytical skills and creative instincts can come together to contribute to Disney's legacy—helping to shape the next generation of stories that will continue to enchant and inspire the world. Here, in the heart of Disney, I find not just a company, but a cultural touchstone that continues to define the contours of imaginative possibility.",
     imageUrl: img1,
     imagePosition: "left",
   },
@@ -56,7 +56,8 @@ const sections = [
     title: "The Disney Culture Code",
     content: (
       <>
-        &quot;Ah, the{" "}
+        Stepping into the vibrant world of Disney, I see a perfect alignment
+        between my own professional ethos and the{" "}
         <a
           href="https://impact.disney.com/diversity-equity-inclusion/culture/#:~:text=We%20work%20to%20create%20a,regardless%20of%20identity%20or%20background."
           className="text-sky-500"
@@ -65,24 +66,27 @@ const sections = [
         >
           Disney Culture Code!{" "}
         </a>
-        It’s not just about wearing mouse ears to the office (though that would
-        be fun). Disney has crafted a culture that&apos;s as focused on
-        inclusion as it is on innovation. At its core, the Disney culture is
-        about creating an environment where everyone, and I mean everyone, feels
-        like they belong. Whether you&apos;re a princess in a tower, a lost boy
-        in Neverland, or just someone who appreciates a good, old-fashioned
-        lightsaber duel, Disney’s ethos ensures that your voice is heard and
-        your talents celebrated. Disney understands that the best stories are
-        those that reflect the vast tapestry of human experience, and they
-        strive to weave these diverse threads into the narratives they create
-        and the teams they assemble. It&apos;s like a potluck where everyone’s
-        unique dishes are not only welcomed but are essential to the feast. This
-        commitment to diversity and equity is what makes the magic happen—both
-        on screen and behind the scenes. So, the Disney Culture Code? It’s about
-        more than just creating entertainment; it’s about building a kingdom
-        where everyone has the chance to star in their own fairy tale. Whether
-        you’re animator or analyst, marketer or magician, at Disney, you’re part
-        of a story that values every character’s happy ending.&quot;
+        My career has been driven by a passion for innovation and a commitment
+        to inclusivity, mirroring Disney&apos;s own pursuit of creating
+        enchanting, universally accessible experiences. At Disney, where every
+        narrative thread is valued, I am eager to weave my unique
+        strand—infusing data with creativity to tell stories that resonate
+        across diverse audiences. <br />I thrive in environments that celebrate
+        diversity and champion individual contributions as part of a greater
+        symphony. My technical skills, coupled with a keen ability to
+        communicate across cultural and functional boundaries, enable me to
+        contribute meaningfully to teams that are as varied as Disney&apos;s
+        audience. My background in data engineering, particularly in
+        environments that require collaboration and adaptability, prepares me to
+        thrive in Disney&apos;s inclusive culture. I look forward to
+        contributing to a workplace where everyone&apos;s voice is not only
+        heard but also integral to the narrative we build together.
+        <br /> At Disney, I see a world of possibility—a place where my
+        technical acumen can support magical experiences and where my commitment
+        to fostering an inclusive team dynamic can flourish. Here, in the midst
+        of Disney&apos;s storytelling prowess, I am excited to be part of
+        creating magic that touches hearts and sparks imagination across the
+        globe, ensuring every project I touch has a bit of that Disney magic.
       </>
     ),
     imageUrl: img3,
@@ -117,7 +121,7 @@ const Portfolio = () => {
                 </div>
               )}
               <div className="md:col-span-3">
-                <h2 className="text-2xl font-bold font-serif text-accent-color mb-4">
+                <h2 className="text-2xl font-bold font-serif text-accent-color mb-1">
                   {section.title}
                 </h2>
                 <p className="text-lg text-justify font-serif leading-relaxed text-gray-700">
