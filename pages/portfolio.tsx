@@ -56,7 +56,7 @@ const sections = [
     title: "The Disney Culture Code",
     content: (
       <>
-        "Ah, the{" "}
+        &quot;Ah, the{" "}
         <a
           href="https://impact.disney.com/diversity-equity-inclusion/culture/#:~:text=We%20work%20to%20create%20a,regardless%20of%20identity%20or%20background."
           className="text-sky-500"
@@ -66,23 +66,23 @@ const sections = [
           Disney Culture Code!{" "}
         </a>
         It’s not just about wearing mouse ears to the office (though that would
-        be fun). Disney has crafted a culture that's as focused on inclusion as
-        it is on innovation. At its core, the Disney culture is about creating
-        an environment where everyone, and I mean everyone, feels like they
-        belong. Whether you're a princess in a tower, a lost boy in Neverland,
-        or just someone who appreciates a good, old-fashioned lightsaber duel,
-        Disney’s ethos ensures that your voice is heard and your talents
-        celebrated. Disney understands that the best stories are those that
-        reflect the vast tapestry of human experience, and they strive to weave
-        these diverse threads into the narratives they create and the teams they
-        assemble. It's like a potluck where everyone’s unique dishes are not
-        only welcomed but are essential to the feast. This commitment to
-        diversity and equity is what makes the magic happen—both on screen and
-        behind the scenes. So, the Disney Culture Code? It’s about more than
-        just creating entertainment; it’s about building a kingdom where
-        everyone has the chance to star in their own fairy tale. Whether you’re
-        animator or analyst, marketer or magician, at Disney, you’re part of a
-        story that values every character’s happy ending."
+        be fun). Disney has crafted a culture that&apos;s as focused on
+        inclusion as it is on innovation. At its core, the Disney culture is
+        about creating an environment where everyone, and I mean everyone, feels
+        like they belong. Whether you&apos;re a princess in a tower, a lost boy
+        in Neverland, or just someone who appreciates a good, old-fashioned
+        lightsaber duel, Disney’s ethos ensures that your voice is heard and
+        your talents celebrated. Disney understands that the best stories are
+        those that reflect the vast tapestry of human experience, and they
+        strive to weave these diverse threads into the narratives they create
+        and the teams they assemble. It&apos;s like a potluck where everyone’s
+        unique dishes are not only welcomed but are essential to the feast. This
+        commitment to diversity and equity is what makes the magic happen—both
+        on screen and behind the scenes. So, the Disney Culture Code? It’s about
+        more than just creating entertainment; it’s about building a kingdom
+        where everyone has the chance to star in their own fairy tale. Whether
+        you’re animator or analyst, marketer or magician, at Disney, you’re part
+        of a story that values every character’s happy ending.&quot;
       </>
     ),
     imageUrl: img3,
