@@ -3,19 +3,19 @@ import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 import { Group, Vector3 } from "three";
 
-useGLTF.preload("/talking.glb");
+useGLTF.preload("/c3po.glb");
 
 export default function Model() {
   const group = useRef<Group>(null);
 
-  const { scene, animations } = useGLTF("/talking.glb");
+  const { scene, animations } = useGLTF("/c3po.glb");
   const { actions } = useAnimations(animations, scene);
   const [isJumpingDown, setIsJumpingDown] = useState(true);
 
   useEffect(() => {
     if (group.current) {
       group.current.position.y = 5;
-      group.current.position.x = 0.2;
+      group.current.position.x = 0.6;
     }
     const jumpDownAction = actions["Static Pose"];
     if (jumpDownAction) {
@@ -32,8 +32,9 @@ export default function Model() {
         if (actions["Static Pose"]) {
           actions["Static Pose"].stop();
         }
-        if (actions["mixamo.com"]) {
-          actions["mixamo.com"].play();
+        if (actions["Armature|mixamo.com|Layer0.001"]) {
+          actions["Armature|mixamo.com|Layer0.001"].play();
+          actions["Armature|mixamo.com|Layer0.001"].setEffectiveTimeScale(0.7);
         }
       }
     }
@@ -41,7 +42,7 @@ export default function Model() {
 
   return (
     <group ref={group}>
-      <primitive object={scene} scale={new Vector3(1.5, 1.5, 1.5)} />
+      <primitive object={scene} scale={new Vector3(3, 3, 3)} />
     </group>
   );
 }

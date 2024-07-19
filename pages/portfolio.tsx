@@ -1,94 +1,47 @@
 import Image from "next/image";
-import disneyLogo from "/public/disney.png";
+import kantarLogo from "/public/kantar.jpg";
 import img1 from "/public/img1.jpg";
-import img2 from "/public/img2.jpeg";
+import img2 from "/public/img2.jpg";
 import img3 from "/public/img3.jpg";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
 
 const qualities = {
-  D: "Diligent",
-  I: "Innovative",
-  S: "Strategic",
-  N: "Nimble",
-  E: "Empathetic",
-  Y: "Youthful",
+  K: "Knowledge",
+  A1: "Analytics",
+  N: "Network",
+  T: "Technology",
+  A2: "Advanced",
+  R: "Research",
+};
+
+const keyDisplayMap = {
+  A1: "A",
+  A2: "A",
 };
 
 const sections = [
   {
     id: "company-culture",
-    title: "What is Disney?",
+    title: "What is Kantar?",
     content:
-      "To me, Disney represents a boundless landscape of imagination and innovation where storytelling transcends the screen and becomes part of the very fabric of our lives. It's a realm where stories aren't just told—they are experienced. Disney weaves magic into the mundane, transforming everyday moments into adventures that thrill the spirit and challenge the mind. From the nostalgic chords of a classic Disney tune to the thrilling visuals of a Marvel superhero saga, Disney has mastered the art of creating universes that appeal to the child in all of us. Its magic lies not just in its ability to entertain, but in its power to inspire and educate through diverse narratives that speak to a global audience, fostering a connection that bridges continents and cultures. As a professional deeply entrenched in the world of data and technology, I see Disney not only as an entertainment titan but as a pioneer in leveraging cutting-edge technology to enhance storytelling. Whether it's through AI-driven personalization in Disney+ or the integration of virtual reality in theme parks, Disney is at the forefront of technological innovation, using it to make its magical experiences even more immersive and accessible. For someone like me, who believes in the power of data to enhance narratives and drive decisions, Disney's approach to storytelling through technology offers a compelling canvas. It's a place where my analytical skills and creative instincts can come together to contribute to Disney's legacy—helping to shape the next generation of stories that will continue to enchant and inspire the world. Here, in the heart of Disney, I find not just a company, but a cultural touchstone that continues to define the contours of imaginative possibility.",
+      "To me, Kantar represents the pinnacle of data-driven understanding and innovative market research. It's a landscape where data isn't just collected—it's transformed into insights that shape the strategies of the world's leading brands. Kantar doesn't just tell you what happened; it delves into the why and how, helping companies not only understand the past but also anticipate and shape the future. Having been an ex-employee, I know firsthand that Kantar weaves intelligence and creativity into every analysis, turning raw numbers into compelling stories that drive impactful decisions. From the nuanced insights into consumer behavior to the sophisticated analytics that forecast market trends, Kantar has mastered the art of turning data into a narrative that businesses can act upon. Its brilliance lies not just in its ability to analyze but in its power to inspire and guide through precise and actionable insights. As someone deeply entrenched in the world of data and analytics, I see Kantar not just as a market research titan but as a pioneer in leveraging advanced technologies to decode human behavior. Whether it's through AI-driven predictive modeling or the integration of real-time analytics into business strategies, Kantar is at the forefront of technological innovation, using it to make its insights even more profound and accessible. For someone like me, who believes in the transformative power of data, Kantar offers a compelling canvas. It's a place where my analytical skills and strategic mindset can converge to contribute to Kantar's mission—helping to shape the future of market research and drive success for global brands. Here, in the heart of Kantar, I find not just a company but a partner in the quest to understand and influence the world.",
     imageUrl: img1,
     imagePosition: "left",
   },
   {
     id: "personal-fit",
-    title: "Why Disney?",
-    content: (
-      <>
-        Joining Disney? It&apos;s practically a no-brainer! Where else can you
-        combine the magic of storytelling with the thrill of technology? At
-        Disney, every pixel on the screen and every byte of data tells a story,
-        and I&apos;m excited to be part of that narrative. Plus, I&apos;ve
-        always imagined what it would be like to have Mickey Mouse as a
-        colleague—after all, he&apos;s the kind of teammate who always sees the
-        &apos;mouse half full.&apos; I grew up mesmerized by Disney’s creativity
-        and have been impressed by how Disney has embraced technology to enhance
-        those magical experiences. From animated classics to pioneering
-        streaming technology, Disney has consistently been at the forefront of
-        innovation. Being part of a team that helps deliver content to millions
-        worldwide isn&apos;t just appealing—it feels like a continuation of the
-        storytelling tradition I&apos;ve admired my whole life. So, why Disney?
-        Because it’s the only place where I can apply my technical skills to
-        sprinkle a little pixie dust on data and contribute to the magic that
-        has enchanted generations. And let’s be honest, contributing to the next
-        incredible Disney+ binge is definitely a perk!
-      </>
-    ),
+    title: "Why Kantar?",
+    content:
+      "Joining Kantar? It's practically a no-brainer! Where else can you combine the science of data with the art of understanding human behavior? At Kantar, every dataset and every insight tells a story, and I'm excited to be part of that narrative. Having been an ex-employee, I know firsthand the innovation and passion that drives Kantar. I've always been impressed by how Kantar blends creativity with cutting-edge analytics to shape the future of brands worldwide. From unveiling the nuances of consumer behavior to pioneering new market research methodologies, Kantar has consistently been at the forefront of the industry. Being part of a team that helps global giants make informed decisions isn't just appealing—it feels like a continuation of the mission I've admired throughout my career. So, why Kantar? Because it's the only place where I can apply my analytical skills to transform data into actionable insights and contribute to the strategies that define market success. And let's be honest, solving complex problems and making an impact on a global scale is definitely a perk!",
     imageUrl: img2,
     imagePosition: "right",
   },
   {
     id: "vision-for-future",
-    title: "The Disney Culture Code",
-    content: (
-      <>
-        Stepping into the vibrant world of Disney, I see a perfect alignment
-        between my own professional ethos and the{" "}
-        <a
-          href="https://impact.disney.com/diversity-equity-inclusion/culture/#:~:text=We%20work%20to%20create%20a,regardless%20of%20identity%20or%20background."
-          className="text-sky-500"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Disney Culture Code!{" "}
-        </a>
-        My career has been driven by a passion for innovation and a commitment
-        to inclusivity, mirroring Disney&apos;s own pursuit of creating
-        enchanting, universally accessible experiences. At Disney, where every
-        narrative thread is valued, I am eager to weave my unique
-        strand—infusing data with creativity to tell stories that resonate
-        across diverse audiences. <br />I thrive in environments that celebrate
-        diversity and champion individual contributions as part of a greater
-        symphony. My technical skills, coupled with a keen ability to
-        communicate across cultural and functional boundaries, enable me to
-        contribute meaningfully to teams that are as varied as Disney&apos;s
-        audience. My background in data engineering, particularly in
-        environments that require collaboration and adaptability, prepares me to
-        thrive in Disney&apos;s inclusive culture. I look forward to
-        contributing to a workplace where everyone&apos;s voice is not only
-        heard but also integral to the narrative we build together.
-        <br /> At Disney, I see a world of possibility—a place where my
-        technical acumen can support magical experiences and where my commitment
-        to fostering an inclusive team dynamic can flourish. Here, in the midst
-        of Disney&apos;s storytelling prowess, I am excited to be part of
-        creating magic that touches hearts and sparks imagination across the
-        globe, ensuring every project I touch has a bit of that Disney magic.
-      </>
-    ),
+    title: "The Kantar Culture Code",
+    content:
+      "Rejoining Kantar feels like coming home to a place where my values and passions perfectly align with the company’s vibrant culture. My career has always revolved around innovation, teamwork, and excellence, and Kantar embodies these principles in its approach to market research and analytics. The focus on Automation, Speed, and Transformation at Kantar is exactly what excites me. I thrive on using technology to streamline processes and deliver quick, actionable insights. Having worked at Kantar before, I know firsthand how the company’s dedication to rapid adaptation and continuous improvement drives success. It's a culture where change is embraced, and I’m eager to dive back in and contribute to these transformative efforts. Kantar’s emphasis on Collaboration and Integrity speaks to my heart. I value working in environments where open communication and ethical practices are the norm. My previous experience with Kantar has shown me how important it is to work with a team that truly values diverse perspectives and individual contributions. I'm looking forward to being part of a team where everyone’s voice matters, and where our collective efforts drive impactful results. At Kantar, I see an exciting opportunity to merge my skills with a culture that values both innovation and client success. I'm enthusiastic about contributing to a team that’s passionate about shaping the future of market research and analytics. Here, I’m eager to blend creativity with data-driven insights and help craft solutions that make a real difference.",
     imageUrl: img3,
     imagePosition: "left",
   },
@@ -158,7 +111,9 @@ const Portfolio = () => {
                   inView ? "scale-110" : "scale-100"
                 } transition-transform duration-500`}
               >
-                <h3 className="text-xl font-semibold font-serif">{letter}</h3>
+                <h3 className="text-xl font-semibold font-serif">
+                  {keyDisplayMap[letter] || letter}
+                </h3>
                 <p className="text-md">{quality}</p>
               </div>
             ))}
@@ -167,15 +122,15 @@ const Portfolio = () => {
 
         <section className="flex items-center justify-around mb-12 space-x-4">
           <Image
-            src={disneyLogo}
+            src={kantarLogo}
             className="image-3d-effect"
-            alt="Disney Logo"
-            width={200}
+            alt="Kantar Logo"
+            width={150}
             height={60}
           />
           <h2 className="text-xl font-semibold font-serif italic text-gray-700">
-            Why hire me? Because with Disney, I&apos;ll bring the
-            &apos;Magic&apos; to your &apos;Kingdom&apos; of data!
+            Why Hire Me? Because I turn Kantar&apos;s raw data into actionable
+            magic!
           </h2>
         </section>
       </div>

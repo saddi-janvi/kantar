@@ -4,16 +4,16 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 250, 235, 215; /* Antique White */
-  --background-end-rgb: 250, 240, 230; /* Linen */
+  --background-start-rgb: 255, 248, 240; /* Lighter than Linen */
+  --background-end-rgb: 255, 250, 245; /* Near White */
   --accent-color: #ffd700; /* Gold for a magical sparkle */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 250, 235, 215;
-    --background-end-rgb: 250, 240, 230;
+    --background-start-rgb: 255, 248, 240;
+    --background-end-rgb: 255, 250, 245;
   }
 }
 
@@ -54,11 +54,12 @@ body::before {
   animation: animateBg 10s linear infinite;
 }
 
-body::after {
+/* body::after {
   background: url("https://www.transparenttextures.com/patterns/stardust.png");
   animation: animateStars 200s linear infinite;
   pointer-events: none;
-}
+} */
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
