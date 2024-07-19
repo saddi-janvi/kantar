@@ -15,7 +15,7 @@ const qualities = {
   R: "Research",
 };
 
-const keyDisplayMap = {
+const keyDisplayMap: { [key: string]: string } = {
   A1: "A",
   A2: "A",
 };
